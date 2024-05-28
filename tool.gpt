@@ -1,0 +1,13 @@
+tools: sys.read?,sys.write?, graph
+
+Write files to the workspace.
+Use python3 matplotlib to graph the users request.
+Execute the code to display the graph.
+
+---
+Name: graph
+Description: Use this tool to execute a matplotlib graph script
+args: script: Name of the script to execute
+Tools: sys.exec?
+
+#!python ${script} &
