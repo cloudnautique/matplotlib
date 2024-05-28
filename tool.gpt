@@ -10,4 +10,5 @@ Description: Use this tool to execute a matplotlib graph script
 args: script: Name of the script to execute
 Tools: sys.exec?
 
-#!python ${script} &
+#!/usr/bin/env sh
+python ${script} >/dev/null 2>&1 & 
